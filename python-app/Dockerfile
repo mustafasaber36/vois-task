@@ -1,8 +1,8 @@
 FROM python:3.9-alpine
 WORKDIR /project
 COPY . .
-RUN pip install redis
-RUN pip install tornado
+# RUN pip install redis
+# RUN pip install tornado
 RUN apk --update add redis
 ENV ENVIRONMENT=DEV
 ENV HOST=localhost
